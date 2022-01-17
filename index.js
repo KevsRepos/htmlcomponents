@@ -80,7 +80,6 @@ templates.forEach((template, key) => {
             }
         }
 
-        console.log(props);
         //props 
         for (let attrIndex = 0; attrIndex < props.length; attrIndex++) {
             let prop = component.getAttribute(props[attrIndex]);
@@ -100,7 +99,6 @@ templates.forEach((template, key) => {
                 }
             }
 
-            console.log(props[attrIndex].toLowerCase());
             //replace all prop values. Inside the template, prop values are recognised by {}
             component.innerHTML = component.innerHTML.replaceAll(`{${props[attrIndex]}}`, prop);    
         }
