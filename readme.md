@@ -64,7 +64,7 @@ components can take props as you may know it from frameworks like svelte/react/v
 ```
 "text" here is an expected prop. If its not passed, error will be thrown.
 
-"headline" on the other hand must not be passed. If not, it will fallback to the default value "Welcome".
+"headline" on the other hand dont have to be passed. If not, it will fallback to the default value "Welcome".
 
 props are values that are dynamic placeholders inside the html structure. To use them inside the html:
 
